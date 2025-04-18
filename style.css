@@ -14,8 +14,9 @@ body {
 
 /* header content */
 header {
-    height: 10vh;
+    width: 100%;
     padding: 1em;
+    font-size: 20px;
     border: 3px solid black; /* remove after */
 }
 
@@ -23,23 +24,42 @@ header h2 {
     display: inline-block;
     border: 3px solid black; /* remove after */
 }
+
+header a {
+    text-decoration: none;
+    border: 3px solid black; /* remove after */
+}
 /* end of header content*/
+
+/* body content */
+h1 {
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    font-size: 75px;
+    border: 3px solid black; <!-- remove after -->
+}
+/* end of body content */
 
 /* footer content */
 footer {
     top: 100vh;
     width: 100%;
     padding: 1em;
+    font-size: 20px;
     position: absolute;
     border: 3px solid black; /* remove after */
     transform:translateY(-100%);
 }
-/* end of footer content */
 
-h1 {
-    width: 50%;
-    margin: auto;
-    padding: 1em;
-    font-size: 5em;
-    border: 3px solid black; <!-- remove after -->
+footer a {
+    display: inline-block;
+    border: 3px solid black; /* remove after */
+    text-decoration: none;
 }
+
+footer h3 {
+    display: inline-block;
+    border: 3px solid black; /* remove after */
+}
+/* end of footer content */
