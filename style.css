@@ -5,7 +5,25 @@
     -webkit-background-clip: text;
 }
 
+header {
+    border: 3px solid black;
+    padding: 10px;
+}
+
 body {
     font-family: 'NeueRegular', sans-serif;
-    background: white;
+    padding: 10px;
+    border: 3px solid black;
+    min-height: 100vh;
+}
+
+footer {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+h1 {
+    width: 50%;
+    margin: auto;
+    border: 3px solid black;
 }
