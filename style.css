@@ -106,30 +106,30 @@ footer a {
 
 @media (min-width: 601px) {
     main h1 {
-        width: 50%;
+        width: 80%;
         margin: auto;
         padding: 10px;
-        font-size: 70px;
+        font-size: 40px;
         /*border: 3px solid black; !* remove after *!*/
     }
 }
 
 @media (min-width: 768px) {
     main h1 {
-        width: 50%;
+        width: 75%;
         margin: auto;
         padding: 10px;
-        font-size: 70px;
+        font-size: 45px;
         /*border: 3px solid black; !* remove after *!*/
     }
 }
 
 @media (min-width: 992px) {
     main h1 {
-        width: 50%;
+        width: 70%;
         margin: auto;
         padding: 10px;
-        font-size: 70px;
+        font-size: 55px;
         /*border: 3px solid black; !* remove after *!*/
     }
 }
@@ -139,7 +139,7 @@ footer a {
         width: 50%;
         margin: auto;
         padding: 10px;
-        font-size: 70px;
+        font-size: 60px;
         /*border: 3px solid black; !* remove after *!*/
     }
 }
