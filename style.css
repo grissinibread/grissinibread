@@ -12,24 +12,23 @@ html {
 }
 
 body {
+    grid-template-rows: 15% 70% 15%;
     padding: 1em;
-    min-height: 95vh;
-    border: 3px solid black; /* remove after */
+    /*border: 3px solid black; !* remove after *!*/
     font-family: 'NeueRegular', sans-serif;
 }
 
 /* header content */
 header {
-    width: 100%;
     padding: 1em;
     font-size: 20px;
-    border: 3px solid black; /* remove after */
+    /*border: 3px solid black; !* remove after *!*/
 }
 
 header h2 {
     font-size: 22px;
     display: inline-block;
-    border: 3px solid black; /* remove after */
+    /*border: 3px solid black; !* remove after *!*/
 }
 
 header a {
@@ -37,42 +36,44 @@ header a {
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    border: 3px solid black; /* remove after */
+    /*border: 3px solid black; !* remove after *!*/
 }
 /* end of header content*/
 
-/* body content */
-.bulk h1 {
+/* main content */
+main {
+}
+main h1 {
     width: 50%;
     margin: auto;
     padding: 10px;
-    font-size: 70px;
-    border: 3px solid black; /* remove after */
+    font-size: 75px;
+    /*border: 3px solid black; !* remove after *!*/
 }
-/* end of body content */
+/* end of main content */
 
 /* footer content */
 footer {
-    top: 95%;
-    width: 100%;
+    gap: 1em;
     padding: 1em;
+    display: flex;
     font-size: 20px;
-    position: absolute;
-    border: 3px solid black; /* remove after */
-    transform:translateY(-100%);
+    align-items: center;
+    justify-content: center;
+    /*border: 3px solid black; !* remove after *!*/
 }
 
 footer a {
+    display: inline-block;
     color: black;
     font-size: 22px;
     font-weight: bold;
-    display: inline-block;
     text-decoration: none;
-    border: 3px solid black; /* remove after */
+    /*border: 3px solid black; !* remove after *!*/
 }
 
 footer h3 {
     display: inline-block;
-    border: 3px solid black; /* remove after */
+    /*border: 3px solid black; !* remove after *!*/
 }
 /* end of footer content */
