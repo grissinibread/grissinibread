@@ -38,6 +38,14 @@ header a {
     text-decoration: none;
     /*border: 3px solid black; !* remove after *!*/
 }
+
+#about:hover {
+    color: #b502f4;
+}
+
+#projects:hover {
+    color: red;
+}
 /* end of header content*/
 
 /* main content */
@@ -69,11 +77,6 @@ footer a {
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    /*border: 3px solid black; !* remove after *!*/
-}
-
-footer h3 {
-    display: inline-block;
     /*border: 3px solid black; !* remove after *!*/
 }
 
