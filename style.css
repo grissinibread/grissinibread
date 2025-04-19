@@ -20,6 +20,7 @@ body {
 
 /* header content */
 header {
+    display: flex;
     padding: 1em;
     font-size: 20px;
     /*border: 3px solid black; !* remove after *!*/
@@ -27,8 +28,15 @@ header {
 
 header h2 {
     font-size: 22px;
-    display: inline-block;
     /*border: 3px solid black; !* remove after *!*/
+}
+
+#nav {
+    margin-left: auto;
+    gap: 1em;
+    display: flex;
+    align-items: center;
+    /*border: 3px solid black;*/
 }
 
 header a {
@@ -93,8 +101,20 @@ footer a {
 }
 /* end of footer content */
 
-/* mobile device development*/
-@media (max-width: 600px) {
+/* mobile device support*/
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        padding: 1em;
+        font-size: 15px;
+        /*border: 3px solid black; !* remove after *!*/
+    }
+
+    header h2 {
+        font-size: 17px;
+        /*border: 3px solid black; !* remove after *!*/
+    }
+
     main h1 {
         width: 80%;
         margin: auto;
@@ -104,7 +124,7 @@ footer a {
     }
 }
 
-@media (min-width: 601px) {
+@media only screen and(min-width: 601px) {
     main h1 {
         width: 80%;
         margin: auto;
@@ -114,7 +134,7 @@ footer a {
     }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     main h1 {
         width: 75%;
         margin: auto;
@@ -124,7 +144,7 @@ footer a {
     }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     main h1 {
         width: 70%;
         margin: auto;
@@ -143,4 +163,4 @@ footer a {
         /*border: 3px solid black; !* remove after *!*/
     }
 }
-/* end of mobile device development*/
+/* end of mobile device support*/
