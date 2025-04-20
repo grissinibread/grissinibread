@@ -3,7 +3,7 @@
 html {
     box-sizing: border-box;
     background: #F2F0EF;
-    /*border: 3px solid black;*/
+    border: 3px solid black;
 }
 
 #title {
@@ -92,10 +92,51 @@ footer a {
 }
 /* end of footer content */
 
+
+/* dark mode settings*/
+@media (prefers-color-scheme: dark) {
+    html {
+        background: #0e1111;
+    }
+
+    header {
+        color: white;
+    }
+
+    header a {
+        color: white;
+    }
+
+    #title {
+        color: transparent;
+        background: linear-gradient(to bottom right, #b502f4, #F2F0EF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    main h1 {
+        color: #F2F0EF;
+    }
+
+    footer a {
+        color: #F2F0EF;
+    }
+}
+/*end of dark mode settings*/
+
+
 /* mobile device support*/
 @media only screen and (max-width: 600px) {
     header {
-        font-size: 8px;
+        font-size: 12px;
+    }
+
+    header a {
+        font-size: 16px;
+    }
+
+    footer a {
+        font-size: 16px;
     }
 
     main h1 {
