@@ -138,34 +138,34 @@ footer a {
     footer a {
         font-size: 16px;
     }
-
     main h1 {
-        font-size: 35px;
+        font-size: 40px;
         width: 80%;
     }
 }
 
-@media only screen and(min-width: 601px) {
+@media only screen and (min-width: 601px) {
     main h1 {
-        font-size: 40px;
+        font-size: 45px;
+        padding-left: 1em;
     }
 }
 
 @media only screen and (min-width: 768px) {
     main h1 {
-        font-size: 45px;
+        font-size: 60px;
     }
 }
 
 @media only screen and (min-width: 992px) {
     main h1 {
-        font-size: 55px;
+        font-size: 65px;
     }
 }
 
 @media (min-width: 1200px) {
     main h1 {
-        font-size: 65px;
+        font-size: 70px;
     }
 }
 /* end of mobile device support*/
