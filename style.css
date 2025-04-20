@@ -18,7 +18,8 @@ body {
     padding: 1em;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
+
 }
 
 /* header content */
@@ -98,6 +99,7 @@ footer a {
 
     main h1 {
         width: 80%;
+        padding: 10px;
         font-size: 35px;
     }
 }
