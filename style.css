@@ -13,10 +13,10 @@ html {
 }
 
 body {
-    margin: 0;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     padding: 1em;
-    font-family: 'NeueRegular', sans-serif;
 }
 
 /* header content */
@@ -28,7 +28,7 @@ header {
 
 #nav {
     margin-left: auto;
-    gap: 1em;
+    gap: 3em;
     display: flex;
     align-items: center;
 }
@@ -51,8 +51,10 @@ header a {
 
 /* main content */
 main {
+    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 /* end of main content */
 
