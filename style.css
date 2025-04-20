@@ -3,7 +3,7 @@
 html {
     box-sizing: border-box;
     background: #F2F0EF;
-    border: 3px solid black;
+    /*border: 3px solid black;*/
 }
 
 #title {
