@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     /*border: 3px solid black;*/
+    font-family: 'NeueRegular', sans-serif;
 }
 
 #title {
@@ -13,24 +14,23 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 1em;
+    margin: 0;
+    height: 100%;
 }
 
 /* header content */
 header {
     display: flex;
-    padding: 1em;
+    padding: 2em;
 }
 
 
 #nav {
-    margin-left: auto;
-    gap: 3em;
+    gap: 2em;
     display: flex;
+    margin-left: auto;
     align-items: center;
+    justify-content: center;
 }
 
 header a {
@@ -60,17 +60,13 @@ main {
 
 /* footer content */
 footer {
-    gap: 1em;
-    bottom: 0;
+    gap: 2em;
     padding: 1em;
     display: flex;
-    font-size: 20px;
-    align-items: center;
     justify-content: center;
 }
 
 footer a {
-    display: inline-block;
     color: black;
     font-size: 22px;
     font-weight: bold;
@@ -93,12 +89,16 @@ footer a {
 /* mobile device support*/
 @media only screen and (max-width: 600px) {
     header {
+        font-size: 10px;
+    }
+
+    header a {
+        color: black;
         font-size: 15px;
     }
 
     main h1 {
         width: 80%;
-        margin: auto;
         padding: 10px;
         font-size: 35px;
     }
@@ -107,7 +107,6 @@ footer a {
 @media only screen and(min-width: 601px) {
     main h1 {
         width: 80%;
-        margin: auto;
         padding: 10px;
         font-size: 40px;
     }
@@ -116,7 +115,6 @@ footer a {
 @media only screen and (min-width: 768px) {
     main h1 {
         width: 75%;
-        margin: auto;
         padding: 10px;
         font-size: 45px;
     }
@@ -125,7 +123,6 @@ footer a {
 @media only screen and (min-width: 992px) {
     main h1 {
         width: 70%;
-        margin: auto;
         padding: 10px;
         font-size: 55px;
     }
