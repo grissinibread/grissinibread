@@ -30,9 +30,10 @@ header {
 
 #nav {
     gap: 2em;
-    margin-left: auto;
     display: flex;
+    margin-left: auto;
     align-items: center;
+    justify-content: center;
 }
 
 header a {
@@ -61,7 +62,7 @@ main {
 
 /* footer content */
 footer {
-    gap: 1em;
+    gap: 4em;
     padding: 1em;
     display: flex;
     font-size: 20px;
@@ -97,35 +98,30 @@ footer a {
     }
 
     main h1 {
-        width: 80%;
         font-size: 35px;
     }
 }
 
 @media only screen and(min-width: 601px) {
     main h1 {
-        width: 80%;
         font-size: 40px;
     }
 }
 
 @media only screen and (min-width: 768px) {
     main h1 {
-        width: 75%;
         font-size: 45px;
     }
 }
 
 @media only screen and (min-width: 992px) {
     main h1 {
-        width: 70%;
         font-size: 55px;
     }
 }
 
 @media (min-width: 1200px) {
     main h1 {
-        width: 50%;
         font-size: 65px;
     }
 }
