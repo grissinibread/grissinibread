@@ -56,6 +56,7 @@ header a {
 main {
     flex: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 /* end of main content */
