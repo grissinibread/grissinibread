@@ -1,9 +1,9 @@
-*, *::before, *::after { box-sizing: inherit;}
+*, *::before, *::after { box-sizing: inherit; border: inherit; }
 
 html {
     box-sizing: border-box;
+    background: #F2F0EF;
     /*border: 3px solid black;*/
-    font-family: 'NeueRegular', sans-serif;
 }
 
 #title {
@@ -15,22 +15,24 @@ html {
 
 body {
     margin: 0;
-    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /* header content */
 header {
     display: flex;
-    padding: 2em;
+    padding: 1em;
 }
 
 
 #nav {
-    gap: 2em;
-    display: flex;
     margin-left: auto;
+    gap: 1em;
+    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 header a {
@@ -54,19 +56,21 @@ main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 /* end of main content */
 
 /* footer content */
 footer {
-    gap: 2em;
+    gap: 1em;
     padding: 1em;
     display: flex;
+    font-size: 20px;
+    align-items: center;
     justify-content: center;
 }
 
 footer a {
+    display: inline-block;
     color: black;
     font-size: 22px;
     font-weight: bold;
@@ -89,17 +93,11 @@ footer a {
 /* mobile device support*/
 @media only screen and (max-width: 600px) {
     header {
-        font-size: 10px;
-    }
-
-    header a {
-        color: black;
-        font-size: 15px;
+        font-size: 8px;
     }
 
     main h1 {
         width: 80%;
-        padding: 10px;
         font-size: 35px;
     }
 }
@@ -107,7 +105,6 @@ footer a {
 @media only screen and(min-width: 601px) {
     main h1 {
         width: 80%;
-        padding: 10px;
         font-size: 40px;
     }
 }
@@ -115,7 +112,6 @@ footer a {
 @media only screen and (min-width: 768px) {
     main h1 {
         width: 75%;
-        padding: 10px;
         font-size: 45px;
     }
 }
@@ -123,7 +119,6 @@ footer a {
 @media only screen and (min-width: 992px) {
     main h1 {
         width: 70%;
-        padding: 10px;
         font-size: 55px;
     }
 }
