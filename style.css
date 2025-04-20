@@ -128,7 +128,7 @@ footer a {
 /* mobile device support*/
 @media only screen and (max-width: 600px) {
     header {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     header a {
@@ -141,6 +141,7 @@ footer a {
 
     main h1 {
         font-size: 35px;
+        width: 80%;
     }
 }
 
