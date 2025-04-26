@@ -108,10 +108,7 @@ footer a {
     }
 
     #title {
-        color: transparent;
         background: linear-gradient(to bottom right, #b502f4, #F2F0EF);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     main h1 {
