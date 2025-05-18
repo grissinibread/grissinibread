@@ -41,7 +41,7 @@ li {
 #topNav {
     gap: 2em;
     display: flex;
-    margin-left: auto;
+    /*margin-left: auto;*/
     align-items: center;
     justify-content: center;
 }
