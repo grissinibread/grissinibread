@@ -6,13 +6,6 @@ html {
     /*border: 3px solid black;*/
 }
 
-#title {
-    color: transparent;
-    background: linear-gradient(to bottom right, #b502f4, black);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 body {
     margin: 0;
     display: flex;
@@ -27,9 +20,25 @@ header {
     padding-right: 4em;
 }
 
+a {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+#title {
+    color: transparent;
+    background: linear-gradient(to bottom right, #b502f4, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 #topNav {
-    list-style-type: none;
     gap: 2em;
     display: flex;
     margin-left: auto;
@@ -37,12 +46,6 @@ header {
     justify-content: center;
 }
 
-header a {
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 #about:hover {
     color: #b502f4;
@@ -63,10 +66,6 @@ main {
 /* end of main content */
 
 /* footer content */
-#bottomNav {
-    list-style-type: none;
-}
-
 #linkedin:hover {
     color: #0a66c2;
 }
