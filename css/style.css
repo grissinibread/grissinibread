@@ -21,20 +21,30 @@ header {
     padding-right: 4em;
 }
 
-::selection {
-    /*background-color: #b502f4;*/
-    color: #b502f4;
+h1 {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 a {
     color: black;
-    font-size: 22px;
     font-weight: bold;
     text-decoration: none;
 }
 
 li {
     list-style-type: none;
+}
+
+#company:hover,
+#company:focus {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 119, 54, 1) 75%, rgba(93, 252, 69, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Optional for Firefox */
+    background-clip: text;
+    color: transparent;
 }
 
 #topNav {
@@ -106,7 +116,7 @@ main {
         background: linear-gradient(to bottom right, #b502f4, #F2F0EF);
     }
 
-    main h1 {
+    h1 {
         color: #F2F0EF;
     }
 
@@ -130,33 +140,34 @@ main {
     footer a {
         font-size: 16px;
     }
-    main h1 {
+
+    h1 {
         font-size: 40px;
         width: 80%;
     }
 }
 
 @media only screen and (min-width: 601px) {
-    main h1 {
+    h1 {
         font-size: 45px;
         padding-left: 1em;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    main h1 {
+    h1 {
         font-size: 60px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    main h1 {
+    h1 {
         font-size: 65px;
     }
 }
 
 @media (min-width: 1200px) {
-    main h1 {
+    h1 {
         font-size: 70px;
     }
 }
