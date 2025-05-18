@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     background: #F2F0EF;
+    font-family: "Noto Sans", sans-serif;
     /*border: 3px solid black;*/
 }
 
@@ -20,6 +21,11 @@ header {
     padding-right: 4em;
 }
 
+::selection {
+    /*background-color: #b502f4;*/
+    color: #b502f4;
+}
+
 a {
     color: black;
     font-size: 22px;
@@ -31,13 +37,6 @@ li {
     list-style-type: none;
 }
 
-#title {
-    color: transparent;
-    background: linear-gradient(to bottom right, #b502f4, black);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 #topNav {
     gap: 2em;
     display: flex;
@@ -46,12 +45,18 @@ li {
     justify-content: center;
 }
 
+#codeDay {
+    height: 0.75em;
+}
 
-#about:hover {
+
+#about:hover,
+#about:focus {
     color: #b502f4;
 }
 
-#projects:hover {
+#projects:hover,
+#projects:focus {
     color: red;
 }
 /* end of header content*/
@@ -66,15 +71,18 @@ main {
 /* end of main content */
 
 /* footer content */
-#linkedin:hover {
+#linkedin:hover,
+#linkedin:focus {
     color: #0a66c2;
 }
 
-#github:hover {
+#github:hover,
+#github:focus {
     color: #f14e32;
 }
 
-#email:hover {
+#email:hover,
+#email:focus {
     color: #004f9f;
 }
 /* end of footer content */
