@@ -28,7 +28,8 @@ header {
 }
 
 
-#nav {
+#topNav {
+    list-style-type: none;
     gap: 2em;
     display: flex;
     margin-left: auto;
@@ -62,21 +63,8 @@ main {
 /* end of main content */
 
 /* footer content */
-footer {
-    gap: 4em;
-    padding: 1em;
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-footer a {
-    display: inline-block;
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
+#bottomNav {
+    list-style-type: none;
 }
 
 #linkedin:hover {
