@@ -1,7 +1,10 @@
-*, *::before, *::after { box-sizing: inherit; border: inherit; }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 html {
-    box-sizing: border-box;
     background: #F2F0EF;
     font-family: "Noto Sans", sans-serif;
 }
