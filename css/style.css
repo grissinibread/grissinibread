@@ -4,7 +4,6 @@ html {
     box-sizing: border-box;
     background: #F2F0EF;
     font-family: "Noto Sans", sans-serif;
-    /*border: 3px solid black;*/
 }
 
 body {
@@ -15,7 +14,6 @@ body {
 }
 
 header {
-    display: flex;
     padding-left: 2em;
     padding-right: 4em;
 }
@@ -28,7 +26,7 @@ main {
 }
 
 h1 {
-    text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    /*text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);*/
 }
 
 a {
@@ -41,8 +39,7 @@ li {
     list-style-type: none;
 }
 
-#company:hover,
-#company:focus {
+#company {
     background: #833AB4;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 119, 54, 1) 75%, rgba(93, 252, 69, 1) 100%);
     -webkit-background-clip: text;
@@ -51,14 +48,8 @@ li {
     /* Optional for Firefox */
     background-clip: text;
     color: transparent;
-}
 
-#topNav {
-    gap: 2em;
-    display: flex;
-    /*margin-left: auto;*/
-    align-items: center;
-    justify-content: center;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 #codeDayImage {
@@ -75,7 +66,6 @@ li {
     color: red;
 }
 
-/* footer content */
 #linkedin:hover,
 #linkedin:focus {
     color: #0a66c2;
@@ -90,7 +80,6 @@ li {
 #email:focus {
     color: #004f9f;
 }
-/* end of footer content */
 
 
 /* dark mode settings*/
