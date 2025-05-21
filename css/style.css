@@ -19,7 +19,9 @@ nav {
 }
 
 #name {
+    margin-left: 2em;
     margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 body {
@@ -29,10 +31,10 @@ body {
     min-height: 100vh;
 }
 
-header,
-footer {
-    padding: 0 4em;
-}
+/*header,*/
+/*footer {*/
+/*    padding: 0 4em;*/
+/*}*/
 
 main {
     flex: 1;
@@ -113,18 +115,20 @@ h1 {
         background: #0e1111;
     }
 
-    header,
-    header a{
-        color: white;
-    }
-
+    header a,
     h1,
     footer a {
         color: #F2F0EF;
     }
-
-    h1 a {
-        color: inherit;
-    }
 }
 /*end of dark mode settings*/
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    nav {
+        font-size: 18px;
+    }
+}
