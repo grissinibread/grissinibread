@@ -9,6 +9,19 @@ html {
     font-family: "Noto Sans", sans-serif;
 }
 
+nav {
+    font-size: 22px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name {
+    margin-block-start: 1em;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -36,14 +49,20 @@ a {
 
 li {
     list-style-type: none;
+    margin-right: 2rem;
 }
 
 ul {
     padding-inline-start: 0;
+    display: flex;
 }
 
 h1 {
     font-size: 70px;
+}
+
+#social-links {
+    justify-content: center;
 }
 
 #company {
