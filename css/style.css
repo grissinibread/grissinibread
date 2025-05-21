@@ -126,6 +126,7 @@ h1 {
 @media screen and (max-width: 600px) {
     #top-right {
         flex-direction: column;
+        margin-block-end: 0;
     }
 
     #top-right li {
