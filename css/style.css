@@ -15,6 +15,7 @@ nav {
 
 #navbar {
     display: flex;
+    flex: 0.1;
     justify-content: space-between;
 }
 
@@ -51,8 +52,8 @@ li {
 }
 
 ul {
-    padding-inline-start: 0;
     display: flex;
+    padding-inline-start: 0;
 }
 
 h1 {
@@ -129,9 +130,13 @@ h1 {
         margin-bottom: 1rem;
     }
 
-    main h1 {
-        font-size: 26px;
+    main {
+        flex: 0.2; /*TODO: FIX TEMPORARY SOLUTION*/
+    }
 
+    main h1 {
+        padding-left: 18px;
+        font-size: 48px;
     }
 
     nav {
