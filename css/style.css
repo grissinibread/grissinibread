@@ -131,16 +131,12 @@ h1 {
         margin-bottom: 1rem;
     }
 
-    main {
-        flex: 0.2; /*TODO: FIX TEMPORARY SOLUTION*/
-    }
-
     main h1 {
         padding-left: 18px;
         font-size: 4rem;
     }
 
     nav {
-        font-size: 18px;
+        font-size: 2rem;
     }
 }
