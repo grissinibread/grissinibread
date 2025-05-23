@@ -31,16 +31,12 @@ body {
     min-height: 100vh;
 }
 
-/*header,*/
-/*footer {*/
-/*    padding: 0 4em;*/
-/*}*/
-
 main {
-    flex: 1;
-    display: inherit;
-    align-items: center;
+    display: inherit; /*flex*/
+
     justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 a {
@@ -134,8 +130,8 @@ h1 {
     }
 
     main h1 {
-        font-size: 35px;
-        margin-left: 3rem;
+        font-size: 26px;
+
     }
 
     nav {
