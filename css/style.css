@@ -119,7 +119,14 @@ h1 {
 }
 /*end of dark mode settings*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+    main h1 {
+        padding-left: 18px;
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
     #top-right {
         flex-direction: column;
         margin-block-end: 0;
@@ -130,7 +137,6 @@ h1 {
     }
 
     main h1 {
-        padding-left: 18px;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
