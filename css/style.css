@@ -14,17 +14,6 @@ nav {
     font-size: 1.6rem;
 }
 
-#navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
-#name {
-    margin-left: 2em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -59,6 +48,23 @@ h1 {
     font-size: 7rem;
 }
 
+.link {
+    display: inline-block;
+    transition: 0.2s;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name {
+    margin-left: 2em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+
 #social-links {
     justify-content: center;
 }
@@ -77,6 +83,11 @@ h1 {
 
 #codeDayImage {
     height: 0.75em;
+}
+
+.link:hover,
+.link:focus {
+    transform: scale(1.2);
 }
 
 #about:hover,
@@ -104,6 +115,11 @@ h1 {
     color: #004f9f;
 }
 
+
+#instagram:hover,
+#instagram:focus {
+    color: #E1306C;
+}
 
 /* dark mode settings*/
 @media (prefers-color-scheme: dark) {
