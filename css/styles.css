@@ -19,8 +19,9 @@ h1 {
 }
 
 .blur {
-    display: flex;
     backdrop-filter: blur(150px);
+
+    display: flex;
     flex-direction: column;
     height: 100dvh;
     width: 100dvw;
@@ -28,11 +29,10 @@ h1 {
 
 .rectangles {
     display: flex;
-
-    position: absolute;
-
     width: 100dvw;
     height: 100vh;
+
+    position: absolute;
     z-index: -1;
 }
 
