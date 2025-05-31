@@ -11,8 +11,8 @@ html {
 }
 
 nav {
-    position: relative;
     font-size: 1.6rem;
+    padding: 2em;
 }
 
 a {
@@ -23,12 +23,13 @@ a {
 
 li {
     list-style-type: none;
-    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 ul {
     display: flex;
     padding-inline-start: 0;
+    margin: 0;
 }
 
 .link {
@@ -54,12 +55,6 @@ ul {
 #navbar {
     display: flex;
     justify-content: space-between;
-}
-
-#name {
-    margin-left: 2em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
 }
 
 /* Dark Mode Settings */

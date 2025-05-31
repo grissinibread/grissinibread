@@ -1,13 +1,13 @@
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
-    position: relative;
+:root {
+    --primary: #ff007f;
+    --secondary: #ffff00;
+    --accent: #ffa500;
+    --warn: #bf40bf;
+    --danger: #aaff00;
 }
 
 main {
     display: inherit;
-    position: inherit;
 
     justify-content: center;
     align-items: center;
@@ -19,8 +19,8 @@ h1 {
 }
 
 .blur {
-    backdrop-filter: blur(150px);
     display: flex;
+    backdrop-filter: blur(150px);
     flex-direction: column;
     height: 100dvh;
     width: 100dvw;
@@ -33,7 +33,7 @@ h1 {
 
     width: 100dvw;
     height: 100vh;
-    z-index: -2;
+    z-index: -1;
 }
 
 .rectangle {
@@ -43,38 +43,33 @@ h1 {
 
 .rectangle1 {
     height: 25dvh;
-    background-color: #FF007F;
+    background-color: var(--primary);
     animation: dillydally1 4s ease-in-out infinite alternate;
 }
 
 .rectangle2 {
-    left: 20%;
     height: 45dvh;
-    background-color: #FFFF00;
+    background-color: var(--secondary);
     animation: dillydally2 6s ease-in-out infinite alternate;
 }
 
 .rectangle3 {
-    left: 40%;
     height: 50dvh;
-    background-color: #FFA500;
+    background-color: var(--accent);
     animation: dillydally3 2s ease-in-out infinite alternate;
 }
 
 .rectangle4 {
-    left: 60%;
     height: 55dvh;
-    background-color: #BF40BF;
+    background-color: var(--warn);
     animation: dillydally4 10s ease-in-out infinite alternate;
 }
 
 .rectangle5 {
-    left: 80%;
     height: 35dvh;
-    background-color: #AAFF00;
+    background-color: var(--danger);
     animation: dillydally5 8s ease-in-out infinite alternate;
 }
-
 
 @keyframes dillydally1 {
     100% {
@@ -129,6 +124,10 @@ h1 {
     height: 0.75em;
 }
 
+#linkedinlist {
+    margin-left: 0;
+}
+
 #linkedin:hover,
 #linkedin:focus {
     color: #0a66c2;
@@ -143,7 +142,6 @@ h1 {
 #email:focus {
     color: #004f9f;
 }
-
 
 #instagram:hover,
 #instagram:focus {
