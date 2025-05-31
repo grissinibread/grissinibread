@@ -14,20 +14,6 @@ nav {
     font-size: 1.6rem;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
-}
-
-main {
-    display: inherit; /*flex*/
-
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-
 a {
     color: black;
     font-weight: bold;
@@ -44,45 +30,9 @@ ul {
     padding-inline-start: 0;
 }
 
-h1 {
-    font-size: 7rem;
-}
-
 .link {
     display: inline-block;
     transition: 0.2s;
-}
-
-#navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
-#name {
-    margin-left: 2em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
-
-
-#social-links {
-    justify-content: center;
-}
-
-#company {
-    background: #833AB4;
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 119, 54, 1) 75%, rgba(93, 252, 69, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    /* Optional for Firefox */
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-}
-
-#codeDayImage {
-    height: 0.75em;
 }
 
 .link:hover,
@@ -100,28 +50,19 @@ h1 {
     color: red;
 }
 
-#linkedin:hover,
-#linkedin:focus {
-    color: #0a66c2;
+#navbar {
+    display: flex;
+    justify-content: space-between;
 }
 
-#github:hover,
-#github:focus {
-    color: #f14e32;
+#name {
+    margin-left: 2em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
-#email:hover,
-#email:focus {
-    color: #004f9f;
-}
+/* Dark Mode Settings */
 
-
-#instagram:hover,
-#instagram:focus {
-    color: #E1306C;
-}
-
-/* dark mode settings*/
 @media (prefers-color-scheme: dark) {
     html {
         background: #0e1111;
@@ -133,7 +74,8 @@ h1 {
         color: #F2F0EF;
     }
 }
-/*end of dark mode settings*/
+
+/* Display Settings */
 
 @media screen and (max-width: 1000px) {
     main h1 {

@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+main {
+    display: inherit; /*flex*/
+
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+#social-links {
+    justify-content: center;
+}
+
+#company {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 119, 54, 1) 75%, rgba(93, 252, 69, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Optional for Firefox */
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#codeDayImage {
+    height: 0.75em;
+}
+
+#linkedin:hover,
+#linkedin:focus {
+    color: #0a66c2;
+}
+
+#github:hover,
+#github:focus {
+    color: #f14e32;
+}
+
+#email:hover,
+#email:focus {
+    color: #004f9f;
+}
+
+
+#instagram:hover,
+#instagram:focus {
+    color: #E1306C;
+}
