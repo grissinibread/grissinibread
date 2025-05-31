@@ -6,7 +6,6 @@ body {
 }
 
 main {
-    backdrop-filter: blur(150px);
     display: inherit;
     position: inherit;
 
@@ -40,35 +39,35 @@ h1 {
 }
 
 .rectangle1 {
-    height: 99px;
+    height: 10dvh;
     background-color: #fb1c89;
     animation: dillydally1 2s ease-in-out infinite alternate;
 }
 
 .rectangle2 {
     left: 20%;
-    height: 399px;
+    height: 40dvh;
     background-color: #ded461;
     animation: dillydally2 6s ease-in-out infinite alternate;
 }
 
 .rectangle3 {
     left: 40%;
-    height: 599px;
+    height: 80dvh;
     background-color: #fc7734;
     animation: dillydally3 2s ease-in-out infinite alternate;
 }
 
 .rectangle4 {
     left: 60%;
-    height: 666px;
+    height: 100dvh;
     background-color: #8022ae;
-    animation: dillydally4 2s ease-in-out infinite alternate;
+    animation: dillydally4 10s ease-in-out infinite alternate;
 }
 
 .rectangle5 {
     left: 80%;
-    height: 189px;
+    height: 20dvh;
     background-color: #71e372;
     animation: dillydally5 8s ease-in-out infinite alternate;
 }
