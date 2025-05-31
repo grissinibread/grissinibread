@@ -32,11 +32,12 @@ h1 {
     position: absolute;
 
     width: 100dvw;
+    height: 100vh;
     z-index: -2;
 }
 
 .rectangle {
-    bottom: 0;
+    align-self: flex-end;
     width: 100%;
 }
 
