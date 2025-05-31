@@ -28,11 +28,11 @@ h1 {
 
 .rectangles {
     display: flex;
-    flex-direction: row;
+
+    position: absolute;
 
     width: 100dvw;
-    position: absolute;
-    bottom: 0;
+    z-index: -2;
 }
 
 .rectangle {
@@ -41,77 +41,37 @@ h1 {
 }
 
 .rectangle1 {
-    height: 5dvh;
-    background-color: #fb1c89;
+    height: 25dvh;
+    background-color: #FF007F;
     animation: dillydally1 4s ease-in-out infinite alternate;
 }
 
 .rectangle2 {
     left: 20%;
-    height: 20dvh;
-    background-color: #ded461;
+    height: 45dvh;
+    background-color: #FFFF00;
     animation: dillydally2 6s ease-in-out infinite alternate;
 }
 
 .rectangle3 {
     left: 40%;
-    height: 40dvh;
-    background-color: #fc7734;
+    height: 50dvh;
+    background-color: #FFA500;
     animation: dillydally3 2s ease-in-out infinite alternate;
 }
 
 .rectangle4 {
     left: 60%;
-    height: 50dvh;
-    background-color: #8022ae;
+    height: 55dvh;
+    background-color: #BF40BF;
     animation: dillydally4 10s ease-in-out infinite alternate;
 }
 
 .rectangle5 {
     left: 80%;
-    height: 10dvh;
-    background-color: #71e372;
+    height: 35dvh;
+    background-color: #AAFF00;
     animation: dillydally5 8s ease-in-out infinite alternate;
-}
-
-#social-links {
-    justify-content: center;
-}
-
-#company {
-    background: #833AB4;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    /* Optional for Firefox */
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-}
-
-#codeDayImage {
-    height: 0.75em;
-}
-
-#linkedin:hover,
-#linkedin:focus {
-    color: #0a66c2;
-}
-
-#github:hover,
-#github:focus {
-    color: #f14e32;
-}
-
-#email:hover,
-#email:focus {
-    color: #004f9f;
-}
-
-
-#instagram:hover,
-#instagram:focus {
-    color: #E1306C;
 }
 
 
@@ -152,4 +112,39 @@ h1 {
     100% {
         transform: translateX(-80dvw);
     }
+}
+
+@media screen and (max-width: 670px) {
+    .blur {
+        backdrop-filter: blur(75px);
+    }
+}
+
+#social-links {
+    justify-content: center;
+}
+
+#codeDayImage {
+    height: 0.75em;
+}
+
+#linkedin:hover,
+#linkedin:focus {
+    color: #0a66c2;
+}
+
+#github:hover,
+#github:focus {
+    color: #f14e32;
+}
+
+#email:hover,
+#email:focus {
+    color: #004f9f;
+}
+
+
+#instagram:hover,
+#instagram:focus {
+    color: #E1306C;
 }
