@@ -2,10 +2,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
+    position: relative;
 }
 
 main {
-    display: inherit; /*flex*/
+    backdrop-filter: blur(150px);
+    display: inherit;
+    position: inherit;
 
     justify-content: center;
     align-items: center;
@@ -16,13 +19,66 @@ h1 {
     font-size: 7rem;
 }
 
+.blur {
+    backdrop-filter: blur(150px);
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.rectangles {
+    display: flex;
+    flex-direction: row;
+    width: 100dvw;
+    position: absolute;
+}
+
+.rectangle {
+    bottom: 0;
+    width: 20%;
+}
+
+.rectangle1 {
+    height: 99px;
+    background-color: #fb1c89;
+    animation: dillydally1 2s ease-in-out infinite alternate;
+}
+
+.rectangle2 {
+    left: 20%;
+    height: 399px;
+    background-color: #ded461;
+    animation: dillydally2 6s ease-in-out infinite alternate;
+}
+
+.rectangle3 {
+    left: 40%;
+    height: 599px;
+    background-color: #fc7734;
+    animation: dillydally3 2s ease-in-out infinite alternate;
+}
+
+.rectangle4 {
+    left: 60%;
+    height: 666px;
+    background-color: #8022ae;
+    animation: dillydally4 2s ease-in-out infinite alternate;
+}
+
+.rectangle5 {
+    left: 80%;
+    height: 189px;
+    background-color: #71e372;
+    animation: dillydally5 8s ease-in-out infinite alternate;
+}
+
 #social-links {
     justify-content: center;
 }
 
 #company {
     background: #833AB4;
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 119, 54, 1) 75%, rgba(93, 252, 69, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -55,4 +111,44 @@ h1 {
 #instagram:hover,
 #instagram:focus {
     color: #E1306C;
+}
+
+
+@keyframes dillydally1 {
+    100% {
+        transform: translateX(80dvw);
+    }
+}
+
+@keyframes dillydally2 {
+    50% {
+        transform: translateX(60dvw);
+    }
+    100% {
+        transform: translateX(-20dvw);
+    }
+}
+
+@keyframes dillydally3 {
+    50 % {
+        transform: translateX(100dvw);
+    }
+    100% {
+        transform: translateX(-40dvw);
+    }
+}
+
+@keyframes dillydally4 {
+    50% {
+        transform: translateX(20dvw);
+    }
+    100% {
+        transform: translateX(-60dvw);
+    }
+}
+
+@keyframes dillydally5 {
+    100% {
+        transform: translateX(-80dvw);
+    }
 }

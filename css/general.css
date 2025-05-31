@@ -5,12 +5,15 @@
 }
 
 html {
+    backdrop-filter: blur(150px);
     font-size: 62.5%;
     background: #F2F0EF;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 nav {
+    backdrop-filter: blur(150px);
+    position: relative;
     font-size: 1.6rem;
 }
 
@@ -51,11 +54,14 @@ ul {
 }
 
 #navbar {
+    backdrop-filter: blur(150px);
     display: flex;
     justify-content: space-between;
 }
 
 #name {
+
+    backdrop-filter: blur(150px);
     margin-left: 2em;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -70,7 +76,8 @@ ul {
 
     header a,
     h1,
-    footer a {
+    footer a,
+    main a{
         color: #F2F0EF;
     }
 }
