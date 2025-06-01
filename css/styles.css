@@ -8,6 +8,7 @@
 
 main {
     display: inherit;
+    padding: 2em;
 
     justify-content: center;
     align-items: center;
