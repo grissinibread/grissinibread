@@ -151,3 +151,9 @@ h1 {
 #instagram:focus {
     color: #E1306C;
 }
+
+main .link:hover,
+main .link:focus {
+    transform: scale(1.05);
+    color: var(--primary);
+}
