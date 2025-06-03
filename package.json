@@ -1,0 +1,23 @@
+{
+  "name": "grissinibread",
+  "version": "1.0.0",
+  "description": "- 🔭 I’m currently working on my personal portfolio website to get a decent, if not good, grasp of HTML and CSS before jumping into other frameworks or languages for the web, you can check out how that's going on here: [here](https://alejandronavarro.dev/) - 🌱 I’m currently learning HTML,CSS,Springboot, SQL. - 😄 Pronouns: He/Him",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grissinibread/grissinibread.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grissinibread/grissinibread/issues"
+  },
+  "homepage": "https://github.com/grissinibread/grissinibread#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
