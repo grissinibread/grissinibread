@@ -24,7 +24,8 @@ h1 {
 }
 
 .blur {
-    backdrop-filter: blur(150px);
+    backdrop-filter: blur(15rem);
+    -webkit-backdrop-filter: blur(15rem);
 
     display: flex;
     flex-direction: column;
