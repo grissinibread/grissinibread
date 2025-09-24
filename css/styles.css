@@ -158,3 +158,9 @@ main .link:focus {
     transform: scale(1.05);
     color: var(--primary);
 }
+
+#nerdFace {
+    height: inherit;
+    width: 1.2em;
+    padding-left: 1rem;
+}
