@@ -4,5 +4,4 @@
 - 🌱 I’m currently learning HTML,CSS,Springboot, SQL.
 - 😄 Pronouns: He/Him
 
-<img width="1280" alt="image" src="https://github.com/user-attachments/assets/062317f2-2a1b-47b0-b403-35e7d809c56d" />
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/769c834a-928c-4880-9ce0-12f87226a313" />
