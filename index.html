@@ -1,72 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Hey! I'm Alejandro, a software engineer who's always learning new technologies/languages, smart solutions, and building fun projects. Check out my work!"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta property="og:title" content="Alejandro's Portfolio"/>
-    <meta property="og:description" content="Alejandro's Portfolio"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="images/favicon.ico"/>
-    <meta property="og:url" content="https://alejandronavarro.dev"/>
-    <link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
-    <link href="css/normalize.css" rel="stylesheet"/>
-    <link href="css/general.css" rel="stylesheet"/>
-    <link href="css/styles.css" rel="stylesheet"/>
-    <title>Alejandro Navarro</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Hey! I'm Alejandro, a software engineer who's always learning new technologies/languages, smart solutions, and building fun projects. Check out my work!"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta property="og:title" content="Alejandro's Portfolio"/>
+        <meta property="og:description" content="Alejandro's Portfolio"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="images/favicon.ico"/>
+        <meta property="og:url" content="https://alejandronavarro.dev"/>
+        <link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+        <link href="css/normalize.css" rel="stylesheet"/>
+        <link href="css/styles.css" rel="stylesheet"/>
+        <title>Alejandro Navarro</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Document</title>
+    </head>
 
-<body>
-    <div class="rectangles">
-        <div class="rectangle rectangle1"></div>
-        <div class="rectangle rectangle2"></div>
-        <div class="rectangle rectangle3"></div>
-        <div class="rectangle rectangle4"></div>
-        <div class="rectangle rectangle5"></div>
-    </div>
+    <body>
+        <div class="rectangles">
+            <div class="rectangle rectangle1"></div>
+            <div class="rectangle rectangle2"></div>
+            <div class="rectangle rectangle3"></div>
+            <div class="rectangle rectangle4"></div>
+            <div class="rectangle rectangle5"></div>
+        </div>
 
-    <div class="blur">
-    <header>
-        <nav id="navbar">
-            <a id="name" href="https://alejandronavarro.dev">alejandro navarro</a>
-            <ul id="top-right">
-<!--                <li><a class="link" id="about" href="html/about.html">about</a></li>-->
-<!--                <li><a class="link" id="projects" href="html/projects.html">projects</a></li>-->
-            </ul>
-        </nav>
-    </header>
+        <div id="blur">
+            <div id="main-structure">
+                <header>
+                    <nav id="navbar">
+                        <a id="name" href="https://alejandronavarro.dev">alejandro navarro</a>
+                        <ul id="top-right">
+                            <!--                <li><a class="link" id="about" href="html/about.html">about</a></li>-->
+                            <!--                <li><a class="link" id="projects" href="html/projects.html">projects</a></li>-->
+                        </ul>
+                    </nav>
+                </header>
 
-    <main>
-        <h1>
+                <main>
+                    <h1>
+                        hello! I'm
+                        <div style="display: inline-flex; width: fit-content">
+                            alejandro <img src="images/nerdFace.svg" id="nerdFace" alt="nerd face emoji">
+                        </div>
+                        <br>
+                        a software engineer
+                        <br>
+                        focused in java development
+                        <br>
+                        - currently working at
+                        <br>
+                        <a class="link" href="https://cahsi.utep.edu/" target="_blank">
+                            <img id="companyImage" src="images/cahsilogo.svg" alt="CAHSI Logo">
+                            <span>cahsi</span>
+                        </a>
+                    </h1>
+                </main>
 
-            hello! I'm
-            <div style="display: inline-flex; width: fit-content">
-                alejandro <img src="images/nerdFace.svg" id="nerdFace" alt="nerd face emoji">
+                <footer>
+                    <nav>
+                        <ul id="social-links">
+                            <li id="linkedinlist"><a class="link" id="linkedin" target="_blank" href="https://www.linkedin.com/in/alejandro-navarro-profile">linkedin</a></li>
+                            <li><a class="link" id="github" target="_blank" href="https://github.com/grissinibread">github</a></li>
+                            <li><a class="link" id="email" href="mailto:alexnavarro57@gmail.com">e-mail</a></li>
+                            <li><a class="link" id="instagram" href="https://www.instagram.com/grissinibread/">instagram</a> </li>
+                        </ul>
+                    </nav>
+                </footer>
+
+        <!--        <a id="experienceTab" class="link" href="#experience">-->
+        <!--            <h2>experience</h2>-->
+        <!--            <h2>↓</h2>-->
+        <!--        </a>-->
             </div>
-            <br>
-            a software engineer
-            <br>
-            focused in java development
-            <br>
-            - currently working at
-            <br>
-            <a class="link" href="https://cahsi.utep.edu/" target="_blank">
-                <img id="companyImage" src="images/cahsilogo.svg" alt="CAHSI Logo" id="cahsi-logo">
-                <span>cahsi</span>
-            </a>
-        </h1>
-    </main>
 
-    <footer>
-        <nav>
-            <ul id="social-links">
-                <li id="linkedinlist"><a class="link" id="linkedin" target="_blank" href="https://www.linkedin.com/in/alejandro-navarro-profile">linkedin</a></li>
-                <li><a class="link" id="github" target="_blank" href="https://github.com/grissinibread">github</a></li>
-                <li><a class="link" id="email" href="mailto:alexnavarro57@gmail.com">e-mail</a></li>
-                <li><a class="link" id="instagram" href="https://www.instagram.com/grissinibread/">instagram</a> </li>
-            </ul>
-        </nav>
-    </footer>
-    </div>
-</body>
+            <section class="experience">
+                <h2 class="experience-header">experience</h2>
+                <div class="grid timeline-grid">
+                    <section id="experience-one" class="left-side-grid" data-aos="fade-right">
+                        <h3 class="experience-section-header">student advocate</h3>
+                        <h4 class="experience-company">computing alliance of hispanic serving institutions</h4>
+                        <h5 class="experience-duration">august 2025 - present</h5>
+                        <p class="experience-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis culpa cumque, deserunt ipsum saepe?</p>
+                    </section>
+                    <section id="experience-two" class="right-side-grid" data-aos="fade-left">
+                        <h3 class="experience-section-header">open-source software engineer</h3>
+                        <h4 class="experience-company">codeday</h4>
+                        <h5 class="experience-duration">june 2025 - august 2025</h5>
+                        <p class="experience-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis culpa cumque, deserunt ipsum saepe?</p>
+                    </section>
+                    <section id="experience-three" class="left-side-grid" data-aos="fade-right">
+                        <h3 class="experience-section-header">open-source software engineer</h3>
+                        <h4 class="experience-company">codeday</h4>
+                        <h5 class="experience-duration">march 2025 - april 2025</h5>
+                        <p class="experience-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis culpa cumque, deserunt ipsum saepe?</p>
+                    </section>
+
+                    <div id="experience-separator"></div>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
