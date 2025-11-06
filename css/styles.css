@@ -19,7 +19,6 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     overflow-x: hidden;
-    max-width: fit-content(100vw);
 }
 
 html, body {
@@ -342,7 +341,7 @@ main .link:focus {
 .experience {
     display: flex;
     flex-direction: column;
-    max-width: 80vw;
+    width: 80vw;
 
     justify-self: center;
 
