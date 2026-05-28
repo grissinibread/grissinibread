@@ -359,13 +359,32 @@ main .link:focus {
 
 .timeline-grid {
     grid-template-areas:
-            'experience-one experience-separator .'
-            '. experience-separator experience-two'
-            'experience-three experience-separator .';
+            'experience-one experience-separator experience-one-image'
+            'experience-two-image experience-separator experience-two'
+            'experience-three experience-separator .'
+            '. experience-separator experience-four';
 }
 
 #experience-one {
     grid-area: experience-one;
+}
+
+#experience-one-image {
+    grid-area: experience-one-image;
+    width: 65%;
+
+    clip-path: circle(50% at 50% 50%);
+    align-self: center;
+    justify-self: center;
+}
+
+#experience-two-image {
+    grid-area: experience-two-image;
+    width: 75%;
+
+    border-radius: 25px;
+    align-self: center;
+    justify-self: center;
 }
 
 #experience-two {
@@ -374,6 +393,10 @@ main .link:focus {
 
 #experience-three {
     grid-area: experience-three;
+}
+
+#experience-four {
+    grid-area: experience-four;
 }
 
 #experience-separator {
