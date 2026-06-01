@@ -259,6 +259,22 @@ main .link:focus {
 
 /* experience styles */
 
+/*TODO: rename classes and ids*/
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-grid {
+    grid-template-areas: none;
+}
+
+.experience-image {
+    justify-self: center;
+}
+
+/*TODO: rewrite class*/
 .experience {
     display: flex;
     flex-direction: column;
@@ -271,20 +287,6 @@ main .link:focus {
     text-align: center;
 }
 
-.grid {
-    display: grid;
-}
-
-.timeline-grid {
-    grid-template-areas:
-            'experience-one experience-separator experience-one-image'
-            'experience-two-image experience-separator experience-two'
-            'experience-three experience-separator .'
-            '. experience-separator experience-four';
-
-    align-self: center;
-}
-
 #experience-one {
     grid-area: experience-one;
 }
@@ -293,7 +295,7 @@ main .link:focus {
     align-self: center;
     justify-self: center;
 
-    box-shadow: 8px 8px 50px black;
+    box-shadow: 10px 10px 35px black;
 }
 
 #experience-one-image {
@@ -330,14 +332,6 @@ main .link:focus {
     margin: 0 auto;
 }
 
-.left-side-grid {
-    margin-right: 2rem;
-}
-
-.right-side-grid {
-    margin-left: 2rem;
-}
-
 .experience-section-header {
     margin-bottom: 0;
 }
@@ -351,6 +345,30 @@ main .link:focus {
 
 .experience-duration {
     margin-top: 0;
+}
+
+@media screen and (min-width: 1080px) {
+    .grid {
+        display: grid;
+    }
+
+    .timeline-grid {
+        grid-template-areas:
+            'experience-one experience-separator experience-one-image'
+            'experience-two-image experience-separator experience-two'
+            'experience-three experience-separator .'
+            '. experience-separator experience-four';
+
+        align-self: center;
+    }
+
+    .left-side-grid {
+        margin-right: 2rem;
+    }
+
+    .right-side-grid {
+        margin-left: 2rem;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
