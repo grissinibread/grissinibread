@@ -1,8 +1,8 @@
 import { Box, Flex } from "@chakra-ui/react";
 import Content from "./components/Content";
 import NavBar from "./components/NavBar";
-import SocialsList from "./components/SocialsList";
 import Experience from "./components/Experience";
+import Arrow from "./components/Arrow";
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
       <Flex height='100vh' direction='column' justifyContent='space-between'>
         <NavBar />
         <Content />
-        <SocialsList />
+        <Arrow />
       </Flex>
-      
+
       <Experience />
     </Box>
   );
