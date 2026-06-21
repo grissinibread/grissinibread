@@ -7,7 +7,7 @@ import Arrow from "./components/Arrow";
 function App() {
   return (
     <Box bg='dark'>
-      <Flex height='100vh' direction='column' justifyContent='space-between'>
+      <Flex minHeight='100dvh' direction='column' justifyContent='space-between'>
         <NavBar />
         <Content />
         <Arrow />
