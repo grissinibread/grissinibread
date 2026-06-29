@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <Flex padding={4} justifyContent='space-between'>
-      <Text>alejandro navarro</Text>
+      <Text fontWeight='bold'>alejandro navarro</Text>
       <Box>
         {socials.map((s) => (
           <Link key={s.name} href={s.link} paddingLeft={4}>
