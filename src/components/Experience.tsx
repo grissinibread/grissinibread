@@ -61,7 +61,7 @@ const Experience = () => {
   ];
 
   return (
-    <>
+    <section id='experience'>
       <Center padding={4} fontSize='3xl'>
         <b>experience</b>
       </Center>
@@ -73,7 +73,7 @@ const Experience = () => {
           </GridItem>
         ))}
       </Grid>
-    </>
+    </section>
   );
 };
 
