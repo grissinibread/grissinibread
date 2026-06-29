@@ -3,6 +3,7 @@ import Content from "./components/Content";
 import NavBar from "./components/NavBar";
 import Experience from "./components/Experience";
 import Arrow from "./components/Arrow";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Arrow />
       </Flex>
 
+      <Projects />
       <Experience />
     </Box>
   );

@@ -1,5 +1,5 @@
 import { Center, Grid, GridItem } from "@chakra-ui/react";
-import RoleCard from "./RoleCard";
+import RoleCard from "./ExperienceCard";
 
 export interface Role {
   id: number;
