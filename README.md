@@ -1,7 +1,7 @@
-## Hi there 🤓
+I'm Alejandro, a recent Software Engineering graduate passionate about building useful software and continuously improving as a developer.
 
-- 🔭 I’m currently working on my personal portfolio website to get a decent, if not good, grasp of HTML and CSS before jumping into other frameworks or languages for the web, you can check out how that's going on here: [here](https://alejandronavarro.dev/)
-- 🌱 I’m currently learning HTML,CSS,Springboot, SQL.
-- 😄 Pronouns: He/Him
-
-<img width="1280" alt="image" src="https://github.com/user-attachments/assets/769c834a-928c-4880-9ce0-12f87226a313" />
+🎓 B.S. in Software Engineering
+💼 Currently looking for a Software Engineering role
+🛠️ Interested in full-stack development
+🌱 Always learning something new—currently exploring modern web technologies, system design, and deeper backend development
+🌐 Portfolio: alejandronavarro.dev
