@@ -1,5 +1,5 @@
 import { Card } from "@chakra-ui/react";
-import type { Role } from "./Experience";
+import type { Role } from "./data/Experiences";
 
 interface Props {
   role: Role;
@@ -7,7 +7,7 @@ interface Props {
 
 const RoleCard = ({ role }: Props) => {
   return (
-    <Card.Root borderColor='purple.border'>
+    <Card.Root borderColor="purple.border">
       <Card.Header>
         <Card.Description>{role.title}</Card.Description>
         <Card.Title>{role.company}</Card.Title>
@@ -16,8 +16,8 @@ const RoleCard = ({ role }: Props) => {
 
       <Card.Body>
         <Card.Description paddingLeft={4}>
-          {role.description.map((d) => (
-            <li key={d}>{d}</li>
+          {role.description.map((description) => (
+            <li key={description}>{description}</li>
           ))}
         </Card.Description>
       </Card.Body>
