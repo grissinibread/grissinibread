@@ -7,15 +7,15 @@ interface Props {
 
 const RoleCard = ({ role }: Props) => {
   return (
-    <Card.Root borderColor="purple.border">
+    <Card.Root bg="blackAlpha.100" borderColor="black">
       <Card.Header>
-        <Card.Description>{role.title}</Card.Description>
+        <Card.Description color='white'>{role.title}</Card.Description>
         <Card.Title>{role.company}</Card.Title>
-        <Card.Description>{role.date}</Card.Description>
+        <Card.Description color='white'>{role.date}</Card.Description>
       </Card.Header>
 
       <Card.Body>
-        <Card.Description paddingLeft={4}>
+        <Card.Description paddingLeft={4} color='white'>
           {role.description.map((description) => (
             <li key={description}>{description}</li>
           ))}

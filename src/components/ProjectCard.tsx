@@ -7,9 +7,15 @@ interface Props {
 }
 
 const ProjectCard = ({ project }: Props) => {
+  // TODO: Apply same theme to all cards
   return (
     <Link href={project.link} target="_blank">
-      <Card.Root borderRadius={8} overflow="hidden" borderColor="purple.border">
+      <Card.Root
+        borderRadius={8}
+        overflow="hidden"
+        bg="blackAlpha.100"
+        borderColor="black"
+      >
         <Image src={project.image}></Image>
         <Card.Header>
           <Card.Title>{project.title}</Card.Title>
@@ -17,7 +23,7 @@ const ProjectCard = ({ project }: Props) => {
         </Card.Header>
 
         <Card.Body>
-          <Card.Description>{project.description}</Card.Description>
+          <Card.Description color='white'>{project.description}</Card.Description>
         </Card.Body>
       </Card.Root>
     </Link>
