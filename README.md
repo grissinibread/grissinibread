@@ -1,4 +1,4 @@
-## Hello! I'm Alejandro Navarro 🤓
+## Hello! I'm Alejandro Navarro 🍞
 A recent Software Engineering graduate passionate about building useful software and continuously improving as a developer.
 
 🎓 B.S. in Software Engineering\
