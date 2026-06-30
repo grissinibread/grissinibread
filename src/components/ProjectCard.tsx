@@ -8,7 +8,7 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
   return (
-    <Link href="https://github.com/grissinibread/game-hub" target="_blank">
+    <Link href={project.link} target="_blank">
       <Card.Root borderRadius={8} overflow="hidden" borderColor="purple.border">
         <Image src={project.image}></Image>
         <Card.Header>
