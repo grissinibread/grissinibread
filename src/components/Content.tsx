@@ -1,14 +1,17 @@
-import { Center } from "@chakra-ui/react";
+import { Center, Image, Text } from "@chakra-ui/react";
+import nerdFace from "../assets/nerdFace.svg";
 
 const Content = () => {
   return (
     <Center
       paddingX={4}
-      fontWeight='bold'
+      fontWeight="bold"
       fontSize={{ base: "2xl", md: "4xl", lg: "5xl", xl: "7xl" }}
     >
-      hello! I'm ale :&#41; <br />
-      a full-stack software engineer <br />- currently looking for work!
+      <Text>
+        hello! I'm ale <Image src={nerdFace} display={"inline-flex"} height={{ base: "7", md: "10", lg: "14", xl: "16"}}/> <br />
+        a full-stack software engineer <br />- currently looking for work!
+      </Text>
     </Center>
   );
 };
