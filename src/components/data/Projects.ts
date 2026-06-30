@@ -1,8 +1,8 @@
-import gameHub from "../assets/gameHub.png";
+import gameHub from "../../assets/gameHub.png";
 
-interface Project {
+export interface Project {
     id: number;
-    image: string;
+    image?: string;
     title: string;
     description: string;
     technologies: string[];
@@ -10,10 +10,12 @@ interface Project {
 
 let projects: Project[] = [
     {
-        id: 1,
-        image: 'bread',
-        title: gameHub,
-        description: 'something',
+        id: 0,
+        image: gameHub,
+        title: 'Game Hub',
+        description: 'Built to understand React.',
         technologies: ['react', 'typescript']
-    }
+    },
 ]
+
+export default projects;
