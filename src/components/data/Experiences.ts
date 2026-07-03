@@ -6,7 +6,7 @@ export interface Role {
   description: string[];
 }
 
-let experiences: Role[] = [
+export let experiences: Role[] = [
   {
     id: 0,
     title: "robot trainer",
@@ -55,5 +55,3 @@ let experiences: Role[] = [
     ],
   },
 ];
-
-export default experiences;

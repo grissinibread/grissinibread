@@ -1,6 +1,6 @@
 import { Center, Grid, GridItem } from "@chakra-ui/react";
 import RoleCard from "./ExperienceCard";
-import experiences from "./data/Experiences";
+import {experiences} from "./data/Experiences";
 
 const Experience = () => {
   return (
