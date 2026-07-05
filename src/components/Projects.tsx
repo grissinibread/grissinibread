@@ -10,8 +10,8 @@ const Projects = () => {
       </Center>
 
       <Grid templateColumns={{ lg: "repeat(3, 1fr)" }} gap="4" padding="4" alignItems="flex-start">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
         ))}
       </Grid>
     </section>
