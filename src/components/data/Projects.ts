@@ -25,7 +25,7 @@ export let projects: Project[] = [
       "Built to understand React. Retrieves information from the publicly available RAWG API and presents the data in a game discovery style site.",
     technologies: ["react", "typescript"],
     image: gameHub,
-    link: "https://github.com/grissinibread/game-hub",
+    link: "https://game-hub-nine-zeta.vercel.app/",
   },
   {
     image: reportGenerator,
