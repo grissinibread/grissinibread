@@ -1,6 +1,6 @@
 import { Card, Image, Link } from "@chakra-ui/react";
-import IconsList from "./IconsList";
-import type { Project } from "./data/Projects";
+import IconsList from "../IconsList";
+import type { Project } from "../data/Projects";
 
 interface Props {
   project: Project;

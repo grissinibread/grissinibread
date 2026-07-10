@@ -1,19 +1,6 @@
 import { Box, Collapsible, Flex, Link, Text, VStack } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
-
-const socials = [
-  {
-    name: "linkedin",
-    link: "https://www.linkedin.com/in/alejandro-navarro-profile",
-    color: "#0a66c2",
-  },
-  {
-    name: "github",
-    link: "https://github.com/grissinibread",
-    color: "#FE4C25",
-  },
-  { name: "email", link: "mailto:nav.alejandro@outlook.com", color: "#8ecae6" },
-];
+import socials from "../data/Socials";
 
 const socialLinkStyles = {
   pl: 4,

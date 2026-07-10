@@ -1,6 +1,6 @@
 import { Center, Grid } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
-import { projects } from "./data/Projects";
+import { projects } from "../data/Projects";
 
 const Projects = () => {
   return (
