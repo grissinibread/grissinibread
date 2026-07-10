@@ -1,16 +1,27 @@
 import { Box, Collapsible, Flex, Link, Text, VStack } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const NavBar = () => {
-  const socials = [
-    {
-      name: "linkedin",
-      link: "https://www.linkedin.com/in/alejandro-navarro-profile",
-    },
-    { name: "github", link: "https://github.com/grissinibread" },
-    { name: "email", link: "mailto:nav.alejandro@outlook.com" },
-  ];
+const socials = [
+  {
+    name: "linkedin",
+    link: "https://www.linkedin.com/in/alejandro-navarro-profile",
+    color: "#0a66c2",
+  },
+  {
+    name: "github",
+    link: "https://github.com/grissinibread",
+    color: "#FE4C25",
+  },
+  { name: "email", link: "mailto:nav.alejandro@outlook.com", color: "#8ecae6" },
+];
 
+const socialLinkStyles = {
+  pl: 4,
+  transition: "transform 0.2s, color 0.2s",
+  textDecoration: "none",
+};
+
+const NavBar = () => {
   return (
     <Flex padding={4} justifyContent="space-between">
       <Text fontWeight="bold">alejandro navarro</Text>
@@ -40,7 +51,15 @@ const NavBar = () => {
 
       <Box hideBelow={"lg"}>
         {socials.map((s) => (
-          <Link key={s.name} href={s.link} paddingLeft={4}>
+          <Link
+            key={s.name}
+            href={s.link}
+            {...socialLinkStyles}
+            _hover={{
+              color: s.color,
+              transform: "scale(1.15)",
+            }}
+          >
             {s.name}
           </Link>
         ))}
