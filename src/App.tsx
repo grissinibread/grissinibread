@@ -8,7 +8,9 @@ import "./components/App.css";
 
 function App() {
   return (
-    <Box bg="linear-gradient(90deg, #d53369 0%, #daae51 100%)">
+    <Box
+      bg=" linear-gradient(to right, #434343, #000000);"
+    >
       <Flex
         minHeight="100dvh"
         direction="column"

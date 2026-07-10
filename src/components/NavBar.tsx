@@ -27,9 +27,9 @@ const NavBar = () => {
             <RxHamburgerMenu />
           </Collapsible.Trigger>
           <Collapsible.Content>
-            <VStack>
+            <VStack paddingTop={3} spaceY={3}>
               {socials.map((s) => (
-                <Link key={s.name} href={s.link} paddingLeft={4}>
+                <Link key={s.name} href={s.link} fontWeight={"bold"}>
                   {s.name}
                 </Link>
               ))}

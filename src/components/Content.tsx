@@ -6,11 +6,11 @@ const Content = () => {
     <Center
       paddingX={4}
       fontWeight="bold"
-      fontSize={{ base: "2xl", md: "4xl", lg: "5xl", xl: "7xl" }}
+      fontSize={{ base: "3xl", md: "4xl", lg: "5xl", xl: "7xl" }}
     >
       <Text>
         hello! I'm ale <Image src={nerdFace} display={"inline-flex"} height={{ base: "7", md: "10", lg: "14", xl: "16"}}/> <br />
-        a full-stack software engineer <br />- currently looking for work!
+        a software engineer <br />- currently looking for work!
       </Text>
     </Center>
   );
