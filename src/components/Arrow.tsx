@@ -11,7 +11,7 @@ const Arrow = () => {
   return (
     <Center padding={4} animation={`${upDown} 2.5s infinite`}>
       <Link href="#projects">
-        <MdOutlineKeyboardDoubleArrowDown size='30px' />
+        <MdOutlineKeyboardDoubleArrowDown size="30px" />
       </Link>
     </Center>
   );

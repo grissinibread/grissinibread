@@ -1,6 +1,6 @@
 import { Center, Grid } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
-import {projects} from "./data/Projects";
+import { projects } from "./data/Projects";
 
 const Projects = () => {
   return (
@@ -9,7 +9,12 @@ const Projects = () => {
         <b>projects</b>
       </Center>
 
-      <Grid templateColumns={{ lg: "repeat(3, 1fr)" }} gap="4" padding="4" alignItems="flex-start">
+      <Grid
+        templateColumns={{ lg: "repeat(3, 1fr)" }}
+        gap="4"
+        padding="4"
+        alignItems="flex-start"
+      >
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
