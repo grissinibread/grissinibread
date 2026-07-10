@@ -1,12 +1,4 @@
-import {
-  Box,
-  Collapsible,
-  Flex,
-  HStack,
-  Link,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Collapsible, Flex, Link, Text, VStack } from "@chakra-ui/react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const NavBar = () => {
@@ -22,9 +14,15 @@ const NavBar = () => {
   return (
     <Flex padding={4} justifyContent="space-between">
       <Text fontWeight="bold">alejandro navarro</Text>
-      
-      <Collapsible.Root hideFrom={'lg'}>
-        <VStack align='end'>
+
+      <Collapsible.Root
+        hideFrom={"lg"}
+        position="absolute"
+        top="0%"
+        right="0%"
+        p={5}
+      >
+        <VStack align="end">
           <Collapsible.Trigger>
             <RxHamburgerMenu />
           </Collapsible.Trigger>
@@ -40,7 +38,7 @@ const NavBar = () => {
         </VStack>
       </Collapsible.Root>
 
-      <Box hideBelow={'lg'}>
+      <Box hideBelow={"lg"}>
         {socials.map((s) => (
           <Link key={s.name} href={s.link} paddingLeft={4}>
             {s.name}
