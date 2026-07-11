@@ -14,7 +14,7 @@ export let projects: Project[] = [
   {
     title: "ChatBot",
     description:
-      "Created an interactive **AI-powered chatbot** application where the robust backend API handles intelligent conversation flow and secure messaging. The frontend delivers a polished user experience with responsive design, formatted text rendering, and helpful indicators like typing status.",
+      "Created an interactive AI-powered chatbot application where the robust backend API handles intelligent conversation flow and secure messaging. The frontend delivers a polished user experience with responsive design, formatted text rendering, and helpful indicators like typing status.",
     technologies: ["react", "typescript", "openAI"],
     image: chatBot,
     link: "https://github.com/grissinibread/ChatBot",

@@ -29,8 +29,7 @@ const IconsList = ({ technologies }: Props) => {
         <Icon
           key={technology}
           as={iconsMap[technology]}
-          width="25px"
-          height="25px"
+          boxSize='30px'
         />
       ))}
     </HStack>

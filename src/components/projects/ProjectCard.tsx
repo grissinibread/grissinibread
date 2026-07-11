@@ -16,14 +16,16 @@ const ProjectCard = ({ project }: Props) => {
         bg="blackAlpha.100"
         borderColor="black"
       >
-        <Image src={project.image}></Image>
         <Card.Header>
+          <Image src={project.image}></Image>
           <Card.Title>{project.title}</Card.Title>
           <IconsList technologies={project.technologies} />
         </Card.Header>
 
         <Card.Body>
-          <Card.Description color='white'>{project.description}</Card.Description>
+          <Card.Description color="white">
+            {project.description}
+          </Card.Description>
         </Card.Body>
       </Card.Root>
     </Link>
