@@ -1,5 +1,5 @@
 ## Hello! I'm Alejandro Navarro 🍞
-A recent Software Engineering graduate passionate about building useful software and continuously improving as a developer.
+A recent Software Engineering graduate passionate about building useful software and continuously improving as an engineer.
 
 🎓 B.S. in Software Engineering\
 💼 Currently looking for a Software Engineering role\
