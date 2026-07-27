@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: Props) => {
       <Card.Body>
         <Card.Description color="white">{project.description}</Card.Description>
         <Flex alignSelf="flex-end">
-          <Link href={project.link}>
+          <Link href={project.link} title={project.link}>
             {project.link && (
               <Icon
                 as={project.linkType === "gitHub" ? FiGithub : MdInsertLink}
