@@ -8,6 +8,7 @@ export interface Project {
   technologies: string[];
   image?: string;
   link?: string;
+  linkType?: "gitHub" | "site";
 }
 
 export let projects: Project[] = [
@@ -18,6 +19,7 @@ export let projects: Project[] = [
     technologies: ["react", "typescript", "openAI"],
     image: chatBot,
     link: "https://github.com/grissinibread/ChatBot",
+    linkType: "gitHub",
   },
   {
     title: "Game Hub",
@@ -26,6 +28,7 @@ export let projects: Project[] = [
     technologies: ["react", "typescript"],
     image: gameHub,
     link: "https://game-hub-nine-zeta.vercel.app/",
+    linkType: "site",
   },
   {
     image: reportGenerator,
@@ -37,8 +40,9 @@ export let projects: Project[] = [
   {
     title: "Dancing Robot",
     description:
-      "Developed an expressive robot capable of dancing and conveying emotions through synchronized movements and animated LED facial expressions. Leveraged SPI and serial communication on an STM32 Nucleo board to control 8x8 LED matrices representing eyes and mouth, as well as motor functions for movement. Integrated motor control logic in C and manually soldered components and circuitry. Focused on creating responsive, personality-driven robot behaviors like \"happy,\" \"mad,\" and \"sad\" using motor direction and LED animations.",
+      'Developed an expressive robot capable of dancing and conveying emotions through synchronized movements and animated LED facial expressions. Leveraged SPI and serial communication on an STM32 Nucleo board to control 8x8 LED matrices representing eyes and mouth, as well as motor functions for movement. Integrated motor control logic in C and manually soldered components and circuitry. Focused on creating responsive, personality-driven robot behaviors like "happy," "mad," and "sad" using motor direction and LED animations.',
     technologies: ["c"],
     link: "https://github.com/grissinibread/dancing-robot",
+    linkType: "gitHub",
   },
 ];
