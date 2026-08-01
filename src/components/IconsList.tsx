@@ -7,6 +7,7 @@ import { TbBrandAngular } from "react-icons/tb";
 import { SiJest } from "react-icons/si";
 import { SiC } from "react-icons/si";
 import { BsOpenai } from "react-icons/bs";
+import { SiClaude } from "react-icons/si";
 
 interface Props {
   technologies: string[];
@@ -21,6 +22,7 @@ const IconsList = ({ technologies }: Props) => {
     openAI: BsOpenai,
     react: FaReact,
     typescript: TbBrandTypescript,
+    claude: SiClaude,
   };
 
   return (

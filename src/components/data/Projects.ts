@@ -1,6 +1,7 @@
 import gameHub from "../../assets/gameHub.png";
 import reportGenerator from "../../assets/reportGenerator.png";
 import chatBot from "../../assets/chatbot.png";
+import expenseTracker from "../../assets/expenseTracker.png";
 
 export interface Project {
   title: string;
@@ -12,6 +13,15 @@ export interface Project {
 }
 
 export let projects: Project[] = [
+  {
+    title: "Expense Tracker",
+    description:
+      "Created a simple expense tracker alongside Claude.",
+    technologies: ["claude", "react", "typescript"],
+    image: expenseTracker,
+    link: "https://expense-tracker-mv8jrdmhz-grissinibreads-projects.vercel.app/",
+    linkType: "site",
+  },
   {
     title: "ChatBot",
     description:
