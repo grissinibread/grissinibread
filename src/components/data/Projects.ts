@@ -19,7 +19,7 @@ export let projects: Project[] = [
       "Created a simple expense tracker alongside Claude.",
     technologies: ["claude", "react", "typescript"],
     image: expenseTracker,
-    link: "https://expense-tracker-mv8jrdmhz-grissinibreads-projects.vercel.app/",
+    link: "https://expense-tracker-theta-nine-40.vercel.app/",
     linkType: "site",
   },
   {
