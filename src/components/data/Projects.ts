@@ -16,7 +16,7 @@ export let projects: Project[] = [
   {
     title: "Expense Tracker",
     description:
-      "Created a simple expense tracker alongside Claude.",
+      "Created a simple expense tracker alongside Claude to learn to use Claude in application development.",
     technologies: ["claude", "react", "typescript"],
     image: expenseTracker,
     link: "https://expense-tracker-theta-nine-40.vercel.app/",
