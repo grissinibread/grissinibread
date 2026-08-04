@@ -8,8 +8,14 @@ const Content = () => {
       fontWeight="bold"
       fontSize={{ base: "3xl", md: "4xl", lg: "5xl", xl: "7xl" }}
     >
-      <Text fontFamily="Sancreek">
-        hello! I'm ale <Image src={nerdFace} display={"inline-flex"} height={{ base: "7", md: "10", lg: "14", xl: "16"}}/> <br />
+      <Text fontFamily="Sancreek" textShadow='-7px 7px black'>
+        hello! I'm ale{" "}
+        <Image
+          src={nerdFace}
+          display={"inline-flex"}
+          height={{ base: "7", md: "10", lg: "14", xl: "16" }}
+        />{" "}
+        <br />
         a software engineer <br />- currently looking for work!
       </Text>
     </Center>

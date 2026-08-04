@@ -5,7 +5,7 @@ import { experiences } from "../data/Experiences";
 const Experience = () => {
   return (
     <section id="experience">
-      <Center padding={4} fontSize="3xl" fontWeight="bold">
+      <Center padding={4} fontSize="3xl" fontWeight="bold" >
         experience
       </Center>
 
