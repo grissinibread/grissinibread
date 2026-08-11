@@ -27,7 +27,7 @@ const NavBar = () => {
           <Collapsible.Content>
             <VStack paddingTop={3} spaceY={3}>
               {socials.map((s) => (
-                <Link key={s.name} href={s.link} fontWeight={"bold"}>
+                <Link key={s.name} href={s.link} fontWeight="bold">
                   {s.name}
                 </Link>
               ))}
