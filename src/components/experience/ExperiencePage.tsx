@@ -1,23 +1,32 @@
-import { Box, Center, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import RoleCard from "./ExperienceCard";
 import { experiences } from "../data/Experiences";
+import TextBlock from "../TextBlock";
 
 const Experience = () => {
   return (
-    <Box id="experience" bg="blue.400">
-      <Center padding={4} fontSize="7xl" fontWeight="bold" fontFamily="Sancreek" textShadow='-7px 7px black'>
-        experience
-      </Center>
+    <Flex
+      as="section"
+      id="experience"
+      direction="column"
+      align="center"
+      gap={{ base: 16, md: 24 }}
+      pt="9rem"
+      pb={{ base: 24, md: 40 }}
+      px={6}
+    >
+      <TextBlock
+        as="h1"
+        title="experience"
+        description="Where I've been building, learning, and helping others get into computing."
+      />
 
-      <Flex direction="column" gap="4" padding="4">
-        {experiences.map((experience, index) => (
-          <Box key={experience.id}>
-            <RoleCard role={experience} />
-            {experience.id !== experiences.length - 1 && <hr />}
-          </Box>
+      <Flex direction="column" w="full" maxW="860px">
+        {experiences.map((experience) => (
+          <RoleCard key={experience.id} role={experience} />
         ))}
       </Flex>
-    </Box>
+    </Flex>
   );
 };
 

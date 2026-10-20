@@ -1,3 +1,7 @@
-html {
-  scroll-behavior: smooth;
+/* Default palette; ThemePicker overrides these on <html> at runtime. */
+:root {
+  --page-bg: #ffffff;
+  --page-fg: #2c2c2c;
+  --page-accent: #cbcbcb;
+  --page-on-accent: #2c2c2c;
 }
