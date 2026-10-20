@@ -1,7 +1,17 @@
-/* Default palette; ThemePicker overrides these on <html> at runtime. */
+/* Palette follows the device's light/dark setting. */
 :root {
-  --page-bg: #ffffff;
-  --page-fg: #2c2c2c;
-  --page-accent: #cbcbcb;
-  --page-on-accent: #2c2c2c;
+  color-scheme: light dark;
+  --page-bg: #faf9fb;
+  --page-fg: #2a2830;
+  --page-accent: #7c3aed;
+  --page-on-accent: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #131118;
+    --page-fg: #f2f0f5;
+    --page-accent: #a073ff;
+    --page-on-accent: #131118;
+  }
 }

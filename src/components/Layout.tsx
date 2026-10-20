@@ -3,7 +3,6 @@ import { MotionConfig } from "motion/react";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
-import ThemePicker from "./themePicker/ThemePicker";
 
 const Layout = () => {
   return (
@@ -20,7 +19,6 @@ const Layout = () => {
         <Outlet />
       </Box>
       <Footer />
-      <ThemePicker />
     </MotionConfig>
   );
 };

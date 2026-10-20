@@ -37,14 +37,12 @@ const Hero = () => {
     <Box
       as="section"
       display="grid"
-      gridTemplateRows="1fr auto 1fr"
-      minH="100svh"
+      rowGap={{ base: 12, md: 16 }}
       p={4}
-      pt={20}
+      pt={{ base: 28, md: 48 }}
       placeItems="center"
       textAlign="center"
     >
-      <Box />
 
       <Flex direction="column" align="center" gap="min(4rem, 6vh)">
         <Text as="h1" textStyle="display" maxW="12em">
@@ -88,6 +86,8 @@ const Hero = () => {
                   rounded="2xl"
                   overflow="hidden"
                   shadow="lifted"
+                  borderWidth="1px"
+                  borderColor="page.fg/10"
                   cursor="grab"
                   _active={{ cursor: "grabbing" }}
                 >
