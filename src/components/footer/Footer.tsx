@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import socials from "../data/Socials";
@@ -74,9 +74,24 @@ const Footer = () => {
           ))}
         </Flex>
 
-        <Text textStyle="caption" color="page.bg" transition="color 0.4s">
-          © {new Date().getFullYear()} alejandro navarro
-        </Text>
+        <Flex direction="column" align="center" gap={2}>
+          <Text textStyle="caption" color="page.bg" transition="color 0.4s">
+            © {new Date().getFullYear()} alejandro navarro
+          </Text>
+          <Text textStyle="caption" color="page.bg" transition="color 0.4s">
+            design inspired by{" "}
+            <Link
+              href="https://spencergabor.work/"
+              target="_blank"
+              rel="noreferrer"
+              color="inherit"
+              textDecoration="underline"
+              textUnderlineOffset="2px"
+            >
+              spencer gabor
+            </Link>
+          </Text>
+        </Flex>
       </Flex>
     </>
   );

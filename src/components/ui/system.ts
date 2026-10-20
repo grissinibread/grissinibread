@@ -41,6 +41,8 @@ const config = defineConfig({
         },
       },
       shadows: {
+        // Stronger shadow for floating image cards; light/dark values live in App.css.
+        card: { value: "var(--card-shadow)" },
         lifted: {
           value:
             "0px 9px 21px rgba(0,0,0,.1), 0px 38px 38px rgba(0,0,0,.09), 0px 85px 51px rgba(0,0,0,.05)",

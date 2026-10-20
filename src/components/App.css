@@ -5,6 +5,8 @@
   --page-fg: #2a2830;
   --page-accent: #7c3aed;
   --page-on-accent: #ffffff;
+  --card-shadow: 0 2px 6px rgba(20, 10, 40, 0.1), 0 14px 28px rgba(20, 10, 40, 0.18),
+    0 32px 56px rgba(20, 10, 40, 0.14);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,5 +15,8 @@
     --page-fg: #f2f0f5;
     --page-accent: #a073ff;
     --page-on-accent: #131118;
+    /* Black shadows barely show on a dark background, so add a faint violet glow. */
+    --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 14px 28px rgba(0, 0, 0, 0.6),
+      0 0 48px rgba(160, 115, 255, 0.18);
   }
 }

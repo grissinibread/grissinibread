@@ -85,7 +85,7 @@ const Hero = () => {
                   h="full"
                   rounded="2xl"
                   overflow="hidden"
-                  shadow="lifted"
+                  shadow="card"
                   borderWidth="1px"
                   borderColor="page.fg/10"
                   cursor="grab"
