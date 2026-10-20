@@ -6,7 +6,7 @@ import { TbRobot } from "react-icons/tb";
 import IconsList from "../IconsList";
 import type { Project } from "../data/Projects";
 import PillButton from "../PillButton";
-import { softElastic } from "../motion";
+import { snappy, softElastic } from "../motion";
 
 interface Props {
   project: Project;
@@ -27,11 +27,11 @@ const ProjectCard = ({ project }: Props) => {
       >
         <motion.div
           initial={{ scale: 0.7, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
+          whileInView={{ scale: 1, opacity: 1, transition: softElastic }}
           viewport={{ once: true, amount: 0.3 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.97 }}
-          transition={softElastic}
+          transition={snappy}
         >
           {project.image ? (
             <Image

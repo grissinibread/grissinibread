@@ -1,20 +1,22 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { motion } from "motion/react";
+import chatBot from "../../assets/hero/chatbot.webp";
+import expenseTracker from "../../assets/hero/expenseTracker.webp";
+import gameHub from "../../assets/hero/gameHub.webp";
+import reportGenerator from "../../assets/hero/reportGenerator.webp";
 import { experiences } from "../data/Experiences";
-import { projects } from "../data/Projects";
-import { elastic } from "../motion";
+import { elastic, snappy } from "../motion";
 
 const name = ["alejandro", "navarro"];
 
-// Resting tilt/offset for each card in the image stack.
-const tilts = [
-  { rotate: 2, y: "5%" },
-  { rotate: -3, y: "-6%" },
-  { rotate: 6, y: "5%" },
-  { rotate: -2, y: "-4%" },
+// Square crops of the project screenshots, pre-sized to ~2x their display size so they stay sharp.
+// Each card has a resting tilt/offset.
+const heroImages = [
+  { src: expenseTracker, alt: "Expense Tracker", rotate: 2, y: "5%" },
+  { src: chatBot, alt: "ChatBot", rotate: -3, y: "-6%" },
+  { src: gameHub, alt: "Game Hub", rotate: 6, y: "5%" },
+  { src: reportGenerator, alt: "Report Generator", rotate: -2, y: "-4%" },
 ];
-
-const heroImages = projects.flatMap((p) => (p.image ? [p] : [])).slice(0, tilts.length);
 
 const companies = [
   ...new Set(experiences.filter((e) => !e.date.endsWith("present")).map((e) => e.company)),
@@ -61,40 +63,51 @@ const Hero = () => {
         </Text>
 
         <Flex justify="center" w="full">
-          {heroImages.map((project, index) => (
+          {heroImages.map((image, index) => (
+            // Outer element owns the delayed entrance; the inner card owns hover/drag, so the
+            // entrance delay never applies to interactions.
             <Box
               asChild
-              key={project.title}
+              key={image.alt}
               position="relative"
-              w="clamp(5.5rem, 22vw, 12rem)"
+              w="clamp(5rem, 20vw, 11rem)"
               aspectRatio="1"
-              rounded="2xl"
-              overflow="hidden"
-              shadow="lifted"
-              bg="page.accent"
-              cursor="grab"
               mr={index < heroImages.length - 1 ? "-6%" : undefined}
-              _active={{ cursor: "grabbing" }}
+              _hover={{ zIndex: 2 }}
+              _active={{ zIndex: 3 }}
             >
               <motion.div
-                initial={{ scale: 0, ...tilts[index] }}
-                animate={{ scale: 1, ...tilts[index] }}
+                initial={{ scale: 0, rotate: image.rotate, y: image.y }}
+                animate={{ scale: 1, rotate: image.rotate, y: image.y }}
                 transition={{ ...elastic, delay: 0.4 + index * 0.08 }}
-                whileHover={{ scale: 1.06, rotate: 0 }}
-                whileDrag={{ scale: 1.12, zIndex: 3 }}
-                drag
-                dragSnapToOrigin
               >
-                <Image
-                  src={project.image}
-                  alt={project.title}
+                <Box
+                  asChild
                   w="full"
                   h="full"
-                  objectFit="cover"
-                  // Crops the transparent window-shadow margin baked into the screenshots.
-                  transform="scale(1.15)"
-                  draggable={false}
-                />
+                  rounded="2xl"
+                  overflow="hidden"
+                  shadow="lifted"
+                  cursor="grab"
+                  _active={{ cursor: "grabbing" }}
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.06, rotate: -image.rotate }}
+                    whileDrag={{ scale: 1.12 }}
+                    transition={snappy}
+                    drag
+                    dragSnapToOrigin
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      w="full"
+                      h="full"
+                      objectFit="cover"
+                      draggable={false}
+                    />
+                  </motion.div>
+                </Box>
               </motion.div>
             </Box>
           ))}
