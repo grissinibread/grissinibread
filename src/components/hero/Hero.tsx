@@ -1,6 +1,5 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { motion } from "motion/react";
-import nerdFace from "../../assets/nerdFace.svg";
 import { experiences } from "../data/Experiences";
 import { projects } from "../data/Projects";
 import { elastic } from "../motion";
@@ -43,19 +42,24 @@ const Hero = () => {
       placeItems="center"
       textAlign="center"
     >
-      <Flex asChild direction="column" align="center" gap={3}>
-        <motion.div {...fadeIn}>
-          <Text textStyle="label" display="inline-flex" alignItems="center" gap={2}>
-            hello! I'm ale
-            <Image src={nerdFace} alt="" boxSize="1.25em" />
-          </Text>
-          <Text textStyle="caption" color="page.fg/60">
-            currently looking for work
-          </Text>
-        </motion.div>
-      </Flex>
+      <Box />
 
       <Flex direction="column" align="center" gap="min(4rem, 6vh)">
+        <Text as="h1" textStyle="display" maxW="12em">
+          {name.map((word, index) => (
+            <motion.span
+              key={word}
+              style={{ display: "inline-block", transformOrigin: "bottom" }}
+              initial={{ scaleY: 0, y: "0.25ch" }}
+              animate={{ scaleY: 1, y: 0 }}
+              transition={{ ...elastic, delay: index * 0.1 }}
+            >
+              {word}
+              {index < name.length - 1 && " "}
+            </motion.span>
+          ))}
+        </Text>
+
         <Flex justify="center" w="full">
           {heroImages.map((project, index) => (
             <Box
@@ -96,32 +100,16 @@ const Hero = () => {
           ))}
         </Flex>
 
-        <Flex direction="column" align="center">
-          <Text as="h1" textStyle="display" maxW="12em">
-            {name.map((word, index) => (
-              <motion.span
-                key={word}
-                style={{ display: "inline-block", transformOrigin: "bottom" }}
-                initial={{ scaleY: 0, y: "0.25ch" }}
-                animate={{ scaleY: 1, y: 0 }}
-                transition={{ ...elastic, delay: index * 0.1 }}
-              >
-                {word}
-                {index < name.length - 1 && " "}
-              </motion.span>
-            ))}
-          </Text>
-          <Text asChild textStyle="display" color="page.accent" transition="color 0.4s">
-            <motion.h2
-              style={{ transformOrigin: "bottom" }}
-              initial={{ scaleY: 0, y: "0.25ch" }}
-              animate={{ scaleY: 1, y: 0 }}
-              transition={{ ...elastic, delay: name.length * 0.1 }}
-            >
-              software engineer
-            </motion.h2>
-          </Text>
-        </Flex>
+        <Text asChild textStyle="display" color="page.accent" transition="color 0.4s">
+          <motion.h2
+            style={{ transformOrigin: "bottom" }}
+            initial={{ scaleY: 0, y: "0.25ch" }}
+            animate={{ scaleY: 1, y: 0 }}
+            transition={{ ...elastic, delay: name.length * 0.1 }}
+          >
+            software engineer
+          </motion.h2>
+        </Text>
       </Flex>
 
       <Flex asChild direction="column" align="center" gap={3}>
