@@ -1,4 +1,4 @@
-import { Box, Grid, List, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, List, Text } from "@chakra-ui/react";
 import { motion } from "motion/react";
 import type { Role } from "../data/Experiences";
 import { softElastic } from "../motion";
@@ -41,6 +41,25 @@ const RoleCard = ({ role }: Props) => {
                 </List.Item>
               ))}
             </List.Root>
+            {role.skills && (
+              <Flex as="ul" wrap="wrap" gap={2} mt={6} listStyle="none">
+                {role.skills.map((skill) => (
+                  <Text
+                    as="li"
+                    key={skill}
+                    textStyle="caption"
+                    px={3}
+                    py={2}
+                    rounded="full"
+                    borderWidth="1px"
+                    borderColor="page.fg/20"
+                    color="page.fg/80"
+                  >
+                    {skill}
+                  </Text>
+                ))}
+              </Flex>
+            )}
           </Box>
         </Grid>
       </motion.article>

@@ -4,9 +4,36 @@ export interface Role {
   company: string;
   date: string;
   description: string[];
+  skills?: string[];
 }
 
 export let experiences: Role[] = [
+  {
+    id: 4,
+    title: "logistics and tech support",
+    company: "figure ai",
+    date: "august 2026 - present",
+    description: [
+      "Maintaining, repairing, and troubleshooting robots and supporting equipment to keep daily operations running.",
+      "Writing Python and Bash scripts on Linux to support day-to-day technical workflows.",
+      "Designing and 3D printing parts with Autodesk Fusion 360.",
+      "Tracking work in Jira and Excel and coordinating with teams over Slack.",
+    ],
+    skills: [
+      "Python",
+      "Linux",
+      "Bash",
+      "Maintenance and Repair",
+      "Troubleshooting",
+      "Autodesk Fusion 360",
+      "3D Printing",
+      "Jira",
+      "Microsoft Excel",
+      "Slack",
+      "Claude Code",
+      "Communication",
+    ],
+  },
   {
     id: 0,
     title: "robot trainer",

@@ -17,7 +17,9 @@ const tilts = [
 
 const heroImages = projects.flatMap((p) => (p.image ? [p] : [])).slice(0, tilts.length);
 
-const companies = [...new Set(experiences.map((e) => e.company))];
+const companies = [
+  ...new Set(experiences.filter((e) => !e.date.endsWith("present")).map((e) => e.company)),
+];
 const companyList =
   companies.length > 1
     ? `${companies.slice(0, -1).join(", ")} & ${companies[companies.length - 1]}`
