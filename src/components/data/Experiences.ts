@@ -14,7 +14,7 @@ export let experiences: Role[] = [
     company: "figure ai",
     date: "august 2026 - present",
     description: [
-      "Maintaining, repairing, and troubleshooting robots and supporting equipment to keep daily operations running.",
+      "Maintaining, repairing, and troubleshooting hardware and supporting equipment to keep daily operations running.",
       "Writing Python and Bash scripts on Linux to support day-to-day technical workflows.",
       "Designing and 3D printing parts with Autodesk Fusion 360.",
       "Tracking work in Jira and Excel and coordinating with teams over Slack.",
