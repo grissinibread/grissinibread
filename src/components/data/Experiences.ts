@@ -45,6 +45,15 @@ export let experiences: Role[] = [
       "Operated robots for control, testing, and real-time data collection workflows.",
       "Communicated technical issues and process improvement opportunities with cross-functional teams.",
     ],
+    skills: [
+      "Linux",
+      "Robotics",
+      "Data Collection",
+      "Data Labeling",
+      "Data Validation",
+      "Communication",
+      "Cross-functional Collaboration",
+    ],
   },
   {
     id: 1,
@@ -55,6 +64,14 @@ export let experiences: Role[] = [
       "Organizing and facilitating workshops, info sessions, and events to connect students with academic, research, and professional development opportunities.",
       "Supporting recruitment and retention initiatives to increase underrepresented participation in computer science and STEM fields.",
       "Contributing to building a supportive community that encourages student persistence in computing disciplines.",
+    ],
+    skills: [
+      "Workshop Facilitation",
+      "Event Planning",
+      "Recruitment",
+      "Outreach",
+      "Community Building",
+      "Communication",
     ],
   },
   {
@@ -68,6 +85,15 @@ export let experiences: Role[] = [
       "Enhanced my technical skills in Eclipse IDE and external dependencies, boosting my software engineering capabilities.",
       "Fostered effective communication with project maintainers, mentors, and staff, strengthening my teamwork and collaboration skills.",
     ],
+    skills: [
+      "Java",
+      "Eclipse IDE",
+      "Git",
+      "Open Source",
+      "Technical Documentation",
+      "Communication",
+      "Teamwork",
+    ],
   },
   {
     id: 3,
@@ -80,5 +106,6 @@ export let experiences: Role[] = [
       "Developed proficiency in TypeScript and Git workflows.",
       " Actively participated in resolving issue #30536 on GitHub, showcasing my problem-solving skills.",
     ],
+    skills: ["TypeScript", "Vite", "Storybook", "Git", "GitHub", "Open Source", "Problem Solving"],
   },
 ];
