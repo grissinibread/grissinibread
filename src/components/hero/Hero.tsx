@@ -27,6 +27,7 @@ const Hero = () => {
       alignContent="center"
       justifyContent="center"
       height="100dvh"
+      p="4"
       pt={{ base: 28, md: 16 }}
       rowGap={{ base: 12, md: 16 }}
     >
